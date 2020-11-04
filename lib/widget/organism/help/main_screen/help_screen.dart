@@ -3,6 +3,9 @@ import 'package:meesho/export/atom_export.dart';
 import 'package:meesho/export/molecule_export.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/text/h3.dart';
+import 'package:meesho/widget/organism/help/Blog/blog_page.dart';
+import 'package:meesho/widget/organism/help/contact_us/contact_us_screen.dart';
+import 'package:meesho/widget/organism/help/faq/faq_screen.dart';
 import 'package:meesho/widget/organism/help/home/homescreen_help.dart';
 
 
@@ -45,9 +48,9 @@ class _Help_screenState extends State<Help_screen> {
           child: TabBarView(
             children: [
           HomeScreen_help(),
-          Scaffold(),
-          Scaffold(),
-          Scaffold(),
+          Contact_US_page(),
+          Faq_page(),
+          Blog_page(),
 
             ],
           ),

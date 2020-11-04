@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:meesho/export/atom_export.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/text/h3.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 
 
 
@@ -28,7 +30,7 @@ class HomeAppbar extends StatelessWidget {
           SizedBox(width: 10,),
           H3text(text:"meesho", color: pink300 ,fontsize: 30, fontweight: FontWeight.bold,),
           Spacer(),
-          Icon(Icons.favorite, color: Colors.black,),
+          Icon(Icons.favorite ,color: Colors.black,),
           SizedBox(width: 30,),
          Image.asset('images/alarm.png' , color: thickblack,),
           SizedBox(width: 30,),
@@ -36,7 +38,13 @@ class HomeAppbar extends StatelessWidget {
          Container(
        padding: EdgeInsets.only(right:10),
             
-            child: Icon(Icons.local_movies, color: Colors.black,))
+            child: IconButton( 
+              icon: FaIcon(FontAwesomeIcons.bell),
+              onPressed: (){},
+              )
+            
+            //  Icon(Icons.add_shopping_cart, color: Colors.black,)
+             )
 
         ],
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meesho/export/atom_export.dart';
 import 'package:meesho/util/colors.dart';
+import 'package:meesho/widget/organism/help/Blog/blog_container.dart';
 import 'package:meesho/widget/organism/help/home/help_container.dart';
 import 'package:meesho/widget/organism/help/home/helpmodel.dart';
 import 'package:meesho/widget/organism/help/home/video_container.dart';
@@ -123,41 +124,7 @@ class _HomeScreen_helpState extends State<HomeScreen_help> {
                scrollDirection: Axis.vertical,
                itemBuilder: (context, index){
 
-                 return     Container(
-                   color: whitecolor,
-                   height: 100,
-                   padding: EdgeInsets.symmetric(horizontal: 20),
-                   margin: EdgeInsets.only(top: 20),
-                   child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                     children: <Widget>[
-                       Expanded(
-                         child: Container(
-                           height: double.infinity,
-                           child: Image.network('https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80'),
-                         ),
-                       ),
-                       SizedBox(width: 10,),
-                       Expanded(
-                            child: Column(
-                           children: <Widget>[
-                             Padding(
-                               padding: const EdgeInsets.only(top:5, bottom: 10),
-                               child: H4text(text: 'Use Facebook', ),
-                             ),
-                             H2text(text: 'How to advertise your product on Facebook',),
-                            //  SizedBox(height: 38,),
-                            Spacer(),
-                             H1text(
-                               text: '2020 - 04 - 08  10:30' ),
-
-                           ],
-                         ),
-                       )
-                    
-                     ]
-                   )
-                 );
+                 return     Blog_containers();
                }
            )
            )
@@ -174,6 +141,11 @@ class _HomeScreen_helpState extends State<HomeScreen_help> {
     );
   }
 }
+
+
+
+
+
 
 
 
