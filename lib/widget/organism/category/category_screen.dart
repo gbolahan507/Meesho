@@ -6,7 +6,7 @@ import 'package:meesho/widget/molecule/appbar_action_widget.dart';
 import 'package:meesho/widget/organism/category/category_details.dart';
 import 'package:meesho/widget/organism/category/categorymodel.dart';
 import 'package:meesho/widget/organism/category/catalog_containers.dart';
-import 'package:meesho/widget/organism/search/search.dart';
+import 'package:meesho/widget/organism/search/search_screen.dart';
 import 'package:vertical_tabs/vertical_tabs.dart';
 
 

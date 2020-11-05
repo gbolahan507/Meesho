@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:meesho/export/organism_export.dart';
+import 'package:meesho/widget/organism/account/childern_folder/my_payment_page.dart';
+import 'package:meesho/widget/organism/account/childern_folder/notifications.dart';
+import 'package:meesho/widget/organism/account/childern_folder/settings_page.dart';
 
 
 
@@ -17,7 +21,7 @@ class All_Profile_settings extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Profile_content(
-            icon: Icons.home,
+            icon: FontAwesomeIcons.university,
             text: 'My Bank Detail',
             onTap: (){
           Navigator.push(context, MaterialPageRoute(builder: (context) => Bank_page()));
@@ -33,43 +37,29 @@ class All_Profile_settings extends StatelessWidget {
             },
             
           ),  Profile_content(
-            icon: Icons.attach_money,
+            icon: FontAwesomeIcons.moneyCheck,
             text: 'My Payment',
-            onTap: (){},
-          ),  Profile_content(
-            icon: Icons.settings,
-            text: 'Refer and earn',
-            onTap: (){},
-          ),  Profile_content(
-            icon: Icons.alarm,
-            text: 'Challenges',
-            onTap: (){},
+            onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context) => My_payment_page( title: 'My Payment',)));
+
+            },
           ),
+       
             Profile_content(
-            icon: Icons.rate_review,
-            text: 'Lottery Spins',
-            onTap: (){},
-          ),
-              Profile_content(
-            icon: Icons.rate_review,
-            text: 'Enter Referral code',
-            onTap: (){},
-          ),    Profile_content(
-            icon: Icons.rate_review,
-            text: 'Meesho Community',
-            onTap: (){},
-          ),    Profile_content(
-            icon: Icons.rate_review,
-            text: 'Business Logo',
-            onTap: (){},
-          ),    Profile_content(
             icon: Icons.settings,
             text: 'Settings',
-            onTap: (){},
+            onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context) => Settings_page( title: 'Settings',)));
+
+              
+            },
           ),    Profile_content(
-            icon: Icons.alarm,
+            icon: FontAwesomeIcons.bell,
             text: 'Notification',
-            onTap: (){},
+            onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context) => Notification_page( title: 'Notification',)));
+
+            },
           ),    Profile_content(
             icon: Icons.rate_review,
             text: 'Rate Meesho',

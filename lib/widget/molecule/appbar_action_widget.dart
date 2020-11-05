@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
 
@@ -8,7 +9,7 @@ class ActionWidget extends StatelessWidget {
     Key key, this.icon, this.onTap, this.padding,
   }) : super(key: key);
 
-  final icon;
+  final  icon;
   final onTap;
   final padding;
 

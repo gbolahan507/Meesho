@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:meesho/widget/organism/account/account_screen.dart';
 import 'package:meesho/widget/organism/category/category_screen.dart';
 import 'package:meesho/widget/organism/help/main_screen/help_screen.dart';
@@ -57,7 +58,9 @@ class _NavScreenState extends State<NavScreen> {
 
           ),
            BottomNavigationBarItem(
-          icon: Icon(Icons.image),
+           icon: FaIcon(
+             FontAwesomeIcons.user
+           ),
            title: Text('Account',)
 
           ),

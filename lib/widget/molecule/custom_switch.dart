@@ -22,7 +22,7 @@ class CustomSwitchs extends StatelessWidget {
       width: 40,
       value: isSwitched,
       toggleSize: 15.0,
-      activeColor:pinkcolor, 
+      activeColor:pink300,
       onToggle: onpressed,
     );
   }

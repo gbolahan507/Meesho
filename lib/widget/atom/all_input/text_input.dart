@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meesho/util/colors.dart';
 
 
 
@@ -32,7 +33,7 @@ Widget TextInput({
             labelText: labelText,
             suffixIcon: suffixIcon,
           enabledBorder: enableBorder ?? UnderlineInputBorder(borderSide: BorderSide(color: Colors.grey ,width: 1 ) ),
-          focusedBorder: focusedBorder ?? UnderlineInputBorder(borderSide: BorderSide(color: Colors.red, width: 2) ),
+          focusedBorder: focusedBorder ?? UnderlineInputBorder(borderSide: BorderSide(color: pink300, width: 2) ),
           contentPadding: EdgeInsets.only(left: 0, bottom: 0),
 
             hintStyle: TextStyle(
@@ -41,7 +42,7 @@ Widget TextInput({
             filled: false,
             hintText: name,
              labelStyle:  TextStyle(
-                color: Colors.red[600], fontSize: 15, fontWeight: FontWeight.w500, ),
+                color: pink300, fontSize: 15, fontWeight: FontWeight.w500, ),
           ),
       
         ),

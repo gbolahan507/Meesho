@@ -8,9 +8,19 @@
       // SingleChildScrollView
               //  onpressed_first_icon: ()=> Navigator.pop(context)
 
- 
 
 
 
 
 
+  
+  
+  //  IconButton(
+  //            icon: FaIcon(FontAwesomeIcons.bicycle),
+  //            onPressed: (){},
+  //          ),
+
+
+//  FaIcon(
+//                   icon, color: thickblack
+//                 ),

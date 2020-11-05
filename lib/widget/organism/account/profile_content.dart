@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:meesho/export/atom_export.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/text/h2.dart';
@@ -28,7 +29,9 @@ class Profile_content extends StatelessWidget {
           children: <Widget>[
             Row(
               children: <Widget>[
-                Icon(icon, color: blackcolor,),
+                FaIcon(
+                  icon, color: thickblack
+                ),
                 SizedBox(width: 15,),
                 H2text(text:  text, color: greycolor, fontweight: FontWeight.w500,)
               ],

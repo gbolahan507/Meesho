@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:meesho/export/atom_export.dart';
 import 'package:meesho/util/colors.dart';
@@ -227,7 +228,9 @@ class _Search_ScreenState extends State<Search_Screen> {
         backgroundColor: whitecolor,
       actions: <Widget>[
         SizedBox(width: 20,),
-        Icon(Icons.arrow_back_ios, color: blackcolor,),
+        InkWell(
+          onTap: () => Navigator.pop(context),
+          child: Icon(Icons.arrow_back_ios, color: blackcolor,)),
         SizedBox(width: 20,),
         Expanded(
           child: Container(

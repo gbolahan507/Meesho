@@ -5,7 +5,8 @@ import 'package:meesho/export/organism_export.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/text/h2.dart';
 import 'package:meesho/widget/atom/text/h3.dart';
-import 'package:meesho/widget/molecule/cart.dart';
+import 'package:meesho/widget/organism/Add_cart/add_cart_screen.dart';
+import 'package:meesho/widget/organism/search/search_screen.dart';
 
 
 
@@ -22,19 +23,25 @@ class _Account_screenState extends State<Account_screen> {
 
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: H3text(text: 'My Catalogs',),
+        title: H3text(text: 'Accounts',),
         actions: <Widget>[
           Container(
             child: Row(
               children: <Widget>[
                 ActionWidget(
                   icon: Icons.search,
-                  onTap: () => print('search'),
+                  onTap: () => 
+        Navigator.push(context, MaterialPageRoute(builder: (context) => Search_Screen()))
+
                 ),
                 ActionWidget(
-                  icon: Icons.save,
-                  onTap: () => 
-        Navigator.push(context, MaterialPageRoute(builder: (context) => Cart_screen()))
+                  padding: EdgeInsets.only(right: 15),
+
+                  icon: Icons.shopping_cart,
+                  onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => Add_cart_screen()));
+
+                  }
 
                   
                 ),
