@@ -62,10 +62,6 @@ class _Account_screenState extends State<Account_screen> {
             All_Profile_settings(),
             SizedBox(height: 100,),
    
-
-
-
-
             Container(
               child: H2text(
                 allignment: Alignment.center,

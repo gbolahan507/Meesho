@@ -26,7 +26,7 @@ class ButtonFilled extends StatelessWidget {
                 bottomRight: Radius.circular(5.0),
                 bottomLeft: Radius.circular(5.0)
                 ),
-            color: color?? pinkcolor
+            color: color?? pink300
           ),
           alignment: Alignment.center,
           child: Text(

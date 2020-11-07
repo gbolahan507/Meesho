@@ -24,3 +24,25 @@
 //  FaIcon(
 //                   icon, color: thickblack
 //                 ),
+
+
+
+
+//              boxShadow: [
+//              BoxShadow(
+//                offset: Offset(0, 10),
+//                blurRadius: 50,
+//                color: Colors.grey.withOpacity(0.5)
+//              )
+//               ]
+
+
+
+
+// boxShadow: [
+//              BoxShadow(
+//                offset: Offset(0, 10),
+//                blurRadius: 50,
+//                color: Colors.grey.withOpacity(0.5)
+//              )
+//               ]
