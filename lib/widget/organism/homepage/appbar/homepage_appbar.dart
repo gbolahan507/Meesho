@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:meesho/export/atom_export.dart';
+import 'package:meesho/export/organism_export.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/text/h3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:meesho/widget/organism/Add_cart/add_cart_screen.dart';
 import 'package:meesho/widget/organism/account/childern_folder/notifications.dart';
+import 'package:meesho/widget/organism/account/edit_profile_page.dart';
 
 
 
@@ -21,18 +23,26 @@ class HomeAppbar extends StatelessWidget {
        padding: EdgeInsets.only(left:8),
       child: Row(
         children: <Widget>[
-          Container(
-            height: 50,
-            width: 50,
-            decoration: BoxDecoration(
-      shape: BoxShape.circle,
-      color: Colors.blue
-            ),
-      ),
+           InkWell(
+             onTap: (){
+           Navigator.push(context, MaterialPageRoute(builder: (context) => Edit_profile_page()));
+
+             },
+                        child: CircleAvatar(
+                  radius: 25,
+                  backgroundImage: AssetImage('images/gbolahan2.png')  
+                ),
+           ),
           SizedBox(width: 10,),
           H3text(text:"meesho", color: pink300 ,fontsize: 30, fontweight: FontWeight.bold,),
           Spacer(),
-          Icon(Icons.favorite ,color: Colors.black,),
+          InkWell(
+            onTap: (){
+           Navigator.push(context, MaterialPageRoute(builder: (context) => My_catalog()));
+           
+            },
+            child: Icon(Icons.favorite ,color: Colors.black,)),
+
           SizedBox(width: 30,),
          InkWell(
            onTap: (){

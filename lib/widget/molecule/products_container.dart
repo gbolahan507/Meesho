@@ -3,14 +3,15 @@ import 'package:meesho/export/atom_export.dart';
 import 'package:meesho/model/catalog_details.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/button_filled.dart';
+import 'package:meesho/widget/molecule/products_landing_page.dart';
 import 'package:meesho/widget/organism/account/catalog/catalog_landing_page.dart';
 import 'package:meesho/widget/organism/homepage/model/homepage_model.dart';
 
 
 
 
-class Homepage_page_product_container extends StatelessWidget {
-  const Homepage_page_product_container({
+class ProductS_container extends StatelessWidget {
+  const ProductS_container({
     Key key, this.homepage, this.onTap, this.firstproductimage, this.secondproductimage, this.thirdproductimage, this.rating, this.currentprice, this.formerprice, this.percentage, this.generalbrandname,
   }) : super(key: key);
 
@@ -31,8 +32,7 @@ class Homepage_page_product_container extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () =>
-       Navigator.push(context, MaterialPageRoute(builder: (context) => Catalog_landing_page())),
+      onTap: onTap,
 
                 child: Container(
                   color: whitecolor,
@@ -68,12 +68,7 @@ class Homepage_page_product_container extends StatelessWidget {
                   // width: 1
                   )
                   ),
-            //    child: BackdropFilter(
-            //     filter: ImageFilter.blur(sigmaX: 8.0, sigmaY: 8.0),
-        // //      child: new Container(
-            // //   decoration: new BoxDecoration(color: Colors.grey.withOpacity(0.0)),
-              // // ),
-              //     )
+            
                     ),
                   )
                 ],
@@ -184,7 +179,7 @@ class Homepage_page_product_container extends StatelessWidget {
         Icon(Icons.save),
         SizedBox(width: 10,),
         H2text(
-                          text: 'Share Now', color: Colors.green[500] ,fontweight: FontWeight.w500,),
+         text: 'Share Now', color: Colors.green[500] ,fontweight: FontWeight.w500,),
                       ],
                     )
                     ),

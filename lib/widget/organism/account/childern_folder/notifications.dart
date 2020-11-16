@@ -22,7 +22,7 @@ class _Notification_pageState extends State<Notification_page> {
            return      Scaffold(
       appBar: AppBar(
         leading: BackButton(color: thickblack,),
-        title: H3text(text: widget.title,),
+        title: H3text(text: 'Notification'),
         backgroundColor: whitecolor,
       ),
 

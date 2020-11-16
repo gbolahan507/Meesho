@@ -5,18 +5,18 @@ import 'package:meesho/model/catalog_details.dart';
 import 'package:meesho/model/catalog_model.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/molecule/copy_wish.dart';
-import 'package:meesho/widget/organism/account/catalog/lastpage.dart';
-
-import 'package:meesho/widget/organism/account/catalog/product_container.dart';
+import 'package:meesho/widget/molecule/product_landingPages_container.dart';
+import 'package:meesho/widget/molecule/product_finalPage.dart';
 import 'package:meesho/widget/organism/account/catalog/safety_heading.dart';
 import 'package:meesho/widget/organism/homepage/model/homepage_model.dart';
 
 
-class Homepage_landing_page extends StatelessWidget {
+class Product_landing_page extends StatelessWidget {
 
   final Homepage homepage;
 
-  Homepage_landing_page({this.homepage});
+
+  Product_landing_page({this.homepage});
   
   @override
   Widget build(BuildContext context) {
@@ -95,16 +95,22 @@ class Homepage_landing_page extends StatelessWidget {
                   physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   itemBuilder: (context, index){
-                  final Catalog logs = catalogs[index];
+                  final Homepage home = homepages[index];
+
                   return 
-                    Product_container(
-                    catalog: logs, productname: logs.productname, productimage: logs.productimage, currentprice: logs.currentprice, formerprice: logs.formerprice, percentage: logs.percentage,
-                  onTap: () => Navigator.push(context, 
-                  MaterialPageRoute(builder: (context) => Landpage(catalog: catalogs[index] ,))),
-                      );
-                              
+                  Product_landingPages_container(
+                  homepage: home,
+                  productimage: home.firstproductimage,
+                  productname: home.productname,
+                  formerprice: home.formerprice,
+                  currentprice: home.currentprice,
+                  percentage: home.percentage,
+                   onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Landpage(homes: homepages[index],) ))
+
+                  );
+
                       },
-                      itemCount: catalogs.length
+                      itemCount: homepages.length
                       ),
 
             ],

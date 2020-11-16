@@ -8,6 +8,9 @@ import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/button_filled.dart';
 import 'package:meesho/widget/atom/text/h2.dart';
 import 'package:meesho/widget/organism/account/catalog/catalog_landing_page.dart';
+import 'package:meesho/widget/organism/homepage/model/homepage_model.dart';
+import 'package:meesho/widget/molecule/products_container.dart';
+import 'package:meesho/widget/molecule/products_landing_page.dart';
 
 
 
@@ -24,7 +27,7 @@ class _WishListState extends State<WishList> {
   Widget build(BuildContext context) {
     return Container(
       color: backgroundcolor,
-      child: Column(
+      child: ListView(
         children: <Widget>[
           Container(
             color: Colors.white,
@@ -55,6 +58,30 @@ class _WishListState extends State<WishList> {
             padding: const EdgeInsets.all(15.0),
             child: H2text(text: 'Shared on October 27',),
           ),
+
+
+                  ListView.builder(
+                  physics: NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  itemBuilder: (context, index){
+                  final Homepage home = homepages[index];
+                   return 
+                   ProductS_container(
+                   homepage: home,
+                   firstproductimage: home.firstproductimage,
+                   secondproductimage: home.secondproductimage,
+                   thirdproductimage: home.thirdproductimage,
+                   generalbrandname: home.generalbrandname,
+                   formerprice: home.formerprice,
+                   currentprice: home.currentprice,
+                   percentage: home.percentage,
+                   onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Product_landing_page(homepage: homepages[index],) ))
+            
+                   );
+                   
+                  },
+                  itemCount: homepages.length
+                   ),
 
           // Homepage_product_container()
         ],

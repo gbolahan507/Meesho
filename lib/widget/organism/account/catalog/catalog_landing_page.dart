@@ -5,9 +5,9 @@ import 'package:meesho/model/catalog_details.dart';
 import 'package:meesho/model/catalog_model.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/molecule/copy_wish.dart';
-import 'package:meesho/widget/organism/account/catalog/lastpage.dart';
+import 'package:meesho/widget/molecule/product_finalPage.dart';
 
-import 'package:meesho/widget/organism/account/catalog/product_container.dart';
+import 'package:meesho/widget/molecule/product_landingPages_container.dart';
 import 'package:meesho/widget/organism/account/catalog/safety_heading.dart';
 
 
@@ -90,7 +90,7 @@ class _Catalog_landing_pageState extends State<Catalog_landing_page> {
                         itemBuilder: (context, index){
                         final Catalog logs = catalogs[index];
                         return 
-                             Product_container(
+                             Product_landingPages_container(
                                catalog: logs, productname: logs.productname, productimage: logs.productimage, currentprice: logs.currentprice, formerprice: logs.formerprice, percentage: logs.percentage,
                                onTap: () => Navigator.push(context, 
                                MaterialPageRoute(builder: (context) => Landpage(catalog: catalogs[index] ,))),

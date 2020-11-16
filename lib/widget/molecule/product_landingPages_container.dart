@@ -7,19 +7,21 @@ import 'package:meesho/widget/atom/button_filled.dart';
 import 'package:meesho/widget/atom/text/h2.dart';
 import 'package:meesho/widget/molecule/copy_wish.dart';
 import 'package:meesho/widget/organism/account/catalog/imagebox.dart';
-import 'package:meesho/widget/organism/account/catalog/out_of_stock_box.dart'; 
+import 'package:meesho/widget/organism/account/catalog/out_of_stock_box.dart';
+import 'package:meesho/widget/organism/homepage/model/homepage_model.dart'; 
 
 
 
 
 
 
-class Product_container extends StatefulWidget {
-  const Product_container({
-    Key key, this.catalog, this.onTap, this.productimage, this.productname, this.currentprice, this.formerprice, this.percentage, this.outofstock,
+class Product_landingPages_container extends StatefulWidget {
+  const Product_landingPages_container({
+    Key key, this.catalog, this.onTap, this.productimage, this.productname, this.currentprice, this.formerprice, this.percentage, this.outofstock, this.homepage,
   }) : super(key: key);
 
   final Catalog catalog;
+  final Homepage homepage;
 
   final productimage;
   final productname;
@@ -30,10 +32,12 @@ class Product_container extends StatefulWidget {
   final onTap;
 
   @override
-  _Product_containerState createState() => _Product_containerState();
+  _Product_landingPages_containerState createState() => _Product_landingPages_containerState();
 }
 
-class _Product_containerState extends State<Product_container> {
+class _Product_landingPages_containerState extends State<Product_landingPages_container> {
+
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -74,7 +78,7 @@ class _Product_containerState extends State<Product_container> {
                        ),
                      ),
 
-                    widget.catalog.outofstock ==null ?
+                    widget.homepage.outofstock ==null ?
 
                      OutOfStock_box_with_button()    
                      

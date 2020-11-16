@@ -20,13 +20,15 @@ class _Orders_screenState extends State<Orders_screen> {
 
    int press = 0;
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(context),
       body: Container(
         color: grey300,
-        child: Column(
+        child: ListView(
           children: <Widget>[
             Container(
               color: whitecolor,
@@ -59,7 +61,7 @@ Navigator.push(context, MaterialPageRoute(builder: (context) => Bank_page()));
                            child: Container(
                            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                            decoration: BoxDecoration(
-                           color: Colors.pink,
+                           color: Colors.pink[300]
                            
                            ),
                            child: H2text(text: 'Add Details',)),
@@ -126,11 +128,16 @@ Navigator.push(context, MaterialPageRoute(builder: (context) => Bank_page()));
                   ),
                 ),
 
-              press == 0 ? Expanded(child: All()): (press == 1 ? Expanded(child: Ordered()) : (press == 2 ? Expanded(child: Shipped()) :
-              (press == 3 ? Expanded(child: Delivered()) :(press == 4 ? Expanded(child: Canceled()) :(press == 5 ? Expanded(child: Exchange()) :
-              (press == 6 ? Expanded(child: Return()) :  Expanded(child: Others()) )))
-              )
-              )
+                
+
+              Container(
+                padding: EdgeInsets.only(top: 100),
+                child: press == 0 ? All(): (press == 1 ? Ordered() : (press == 2 ? Shipped() :
+                (press == 3 ? Delivered() :(press == 4 ? Canceled() :(press == 5 ? Exchange() :
+                (press == 6 ? Return() :  Others() )))
+                )
+                )
+                ),
               )
           ],
         ),

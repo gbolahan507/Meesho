@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         
       ),
-      home:  Edit_profile_page
+      home:  NavScreen
       (),
     );
   }

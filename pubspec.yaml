@@ -27,6 +27,8 @@ dependencies:
   carousel_pro: ^1.0.0
   cupertino_icons: ^1.0.0
   font_awesome_flutter: ^8.10.0
+  image_picker: ^0.6.7+12
+
 
 
   

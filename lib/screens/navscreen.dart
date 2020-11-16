@@ -15,8 +15,8 @@ class NavScreen extends StatefulWidget {
 class _NavScreenState extends State<NavScreen> {
   final List<Widget> _screens = [
     HomeScreen(),
-    // Category(),
-    Scaffold(),
+    Category(),
+    // Scaffold(),
     Orders_screen(),
     Help_screen(),
     Account_screen(),

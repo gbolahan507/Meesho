@@ -43,7 +43,7 @@ Homepage({this.generalbrandname, this.materialtype, this.pattern, this.multipack
 List <Homepage> homepages = [
 
   Homepage(
-    generalbrandname: 'Urbane Partywear Women Tops & Tunic',
+    generalbrandname: 'Urbane Women Tops & Tunic',
     materialtype: 'Fabric: Polyester ',
     sleevelength: 'Three - Quarter Sleeves',
     multipack: '1',
@@ -54,7 +54,7 @@ List <Homepage> homepages = [
     secondproductimage: 'images/girl2.png',
     thirdproductimage: 'images/stylegirl.png',
     shipping: 'Free Shipping',
-    currentprice: '#1000',
+    currentprice: '#100',
     formerprice: '#7000',
     percentage: '10',
     pattern: 'Solid',
@@ -79,13 +79,13 @@ List <Homepage> homepages = [
     secondproductimage: 'images/stylegirl.png',
     thirdproductimage: 'images/girl2.png',
     shipping: 'Free Shipping',
-    currentprice: '#1000',
+    currentprice: '#200',
     formerprice: '#7000',
     percentage: '10',
     pattern: 'Solid',
     productname: 'Womens Solid Peach Polyester Top',
     productimage: 'images/girl.png',
-    outofstock: 'PRODUCT AVAILABLE',
+    outofstock: null
 
 
 
@@ -103,7 +103,7 @@ List <Homepage> homepages = [
     secondproductimage: 'images/girl2.png',
     thirdproductimage: 'images/stylegirl.png',
     shipping: 'Free Shipping',
-    currentprice: '#1000',
+    currentprice: '#300',
     formerprice: '#7000',
     percentage: '10',
     pattern: 'Solid',
@@ -128,13 +128,13 @@ List <Homepage> homepages = [
     secondproductimage: 'images/girl2.png',
     thirdproductimage: 'images/girl.png',
     shipping: 'Free Shipping',
-    currentprice: '#1000',
+    currentprice: '#400',
     formerprice: '#7000',
     percentage: '10',
     pattern: 'Solid',
     productname: 'Womens Solid Peach Polyester Top',
     productimage: 'images/girl.png',
-    outofstock: 'PRODUCT AVAILABLE',
+    outofstock: null
 
 
 
@@ -153,7 +153,7 @@ List <Homepage> homepages = [
     secondproductimage: 'images/girl.png',
     thirdproductimage: 'images/stylegirl.png',
     shipping: 'Free Shipping',
-    currentprice: '#1000',
+    currentprice: '#500',
     formerprice: '#7000',
     percentage: '10',
     pattern: 'Solid',

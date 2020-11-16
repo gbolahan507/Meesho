@@ -8,12 +8,14 @@ import 'package:meesho/widget/organism/account/catalog/imagebox.dart';
 import 'package:meesho/widget/organism/account/catalog/sizes_container.dart';
 import 'package:meesho/widget/organism/account/catalog/out_of_stock_box.dart';
 import 'package:meesho/widget/organism/account/catalog/safety_heading.dart';
+import 'package:meesho/widget/organism/homepage/model/homepage_model.dart';
 
 
 class Landpage extends StatefulWidget {
 
   final Catalog catalog;
-   Landpage({this.catalog});
+  final Homepage homes;
+   Landpage({this.catalog, this.homes});
 
   @override
   _LandpageState createState() => _LandpageState();
@@ -38,11 +40,11 @@ class _LandpageState extends State<Landpage> {
               child: Column(
                 children: <Widget>[
                   ImageBox (
-      productname: widget.catalog.productname,
-      productimage: widget.catalog.productimage,
-      currentprice: widget.catalog.currentprice,
-      formerprice: widget.catalog.formerprice,
-      percentage: widget.catalog.percentage,
+      productname: widget.homes.productname,
+      productimage: widget.homes.productimage,
+      currentprice: widget.homes.currentprice,
+      formerprice: widget.homes.formerprice,
+      percentage: widget.homes.percentage,
 
                   ),
               
@@ -60,13 +62,13 @@ class _LandpageState extends State<Landpage> {
       SizedBox(height: 10,),
         Free_Dispatch_Box(
           icon: Icons.motorcycle,
-          text:"Dispatched in ${widget.catalog.dispatch}" 
+          text:"Dispatched in ${widget.homes.dispatch}" 
         ),
 
                          SizedBox(height: 10,),
 
 
-              widget.catalog.outofstock ==null ?
+              widget.homes.outofstock ==null ?
                Out_of_stock_box() : 
 
                Container(
@@ -80,6 +82,7 @@ class _LandpageState extends State<Landpage> {
                    ],
                  ),
                )
+
                  ],
               ),
             ),
@@ -124,7 +127,7 @@ class _LandpageState extends State<Landpage> {
                            children: <Widget>[
                              Icon(Icons.timer),
                              SizedBox(width: 10,),
-                             H2text(text:  'Dispatched in ${widget.catalog.dispatch}' ,),
+                             H2text(text:  'Dispatched in ${widget.homes.dispatch}' ,),
                            ],
                          ),
                        ],
@@ -158,22 +161,22 @@ class _LandpageState extends State<Landpage> {
                      child: Column(
                        children: <Widget>[
                         H4text(
-                          text:  'Fabric : ${widget.catalog.materialtype}'
+                          text:  'Fabric : ${widget.homes.materialtype}'
                         ),
                          SizedBox(height: 8,),
 
                          H4text(
-                          text:  'Sleeve Length : ${widget.catalog.sleevelength}'
+                          text:  'Sleeve Length : ${widget.homes.sleevelength}'
                         ),
                          SizedBox(height: 8,),
 
                          H4text(
-                          text:  'Pattern : ${widget.catalog.pattern}'
+                          text:  'Pattern : ${widget.homes.pattern}'
                         ),
                          SizedBox(height: 8,),
 
                          H4text(
-                          text:  'Multipack : ${widget.catalog.multipack}'
+                          text:  'Multipack : ${widget.homes.multipack}'
                         ),
                          SizedBox(height: 8,),
 
@@ -182,7 +185,7 @@ class _LandpageState extends State<Landpage> {
                            children: <Widget>[
                              Expanded(
                            child: H4text(
-                               text:  'Sizes :\n${widget.catalog.size}'
+                               text:  'Sizes :\n${widget.homes.size}'
                                  ),
                              ),
                            ],
@@ -243,7 +246,7 @@ class _LandpageState extends State<Landpage> {
 
   AppBar buildAppBar() {
     return AppBar(
-      title: H2text(text: "${widget.catalog.productname}" ),
+      title: H2text(text: "${widget.homes.productname}" ),
       backgroundColor: whitecolor,
       leading: BackButton(
         color:  blackcolor),
