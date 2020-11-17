@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:meesho/export/atom_export.dart';
 import 'package:meesho/export/molecule_export.dart';
 import 'package:meesho/export/organism_export.dart';
+import 'package:meesho/export/others_export.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/all_input/search_input.dart';
 import 'package:meesho/widget/atom/text/h3.dart';
+import 'package:meesho/widget/organism/homepage/mainscreen/homepage_screen.dart';
 import 'package:meesho/widget/organism/orders/all_orders.dart';
 import 'package:meesho/widget/organism/orders/ordermodel.dart';
 import 'package:meesho/widget/organism/orders/order_button_container.dart';
@@ -138,7 +140,11 @@ Navigator.push(context, MaterialPageRoute(builder: (context) => Bank_page()));
                 )
                 )
                 ),
-              )
+              ),
+
+                SizedBox(height: 50,),
+
+                BrowseCatalog()
           ],
         ),
       )
@@ -240,6 +246,32 @@ Navigator.push(context, MaterialPageRoute(builder: (context) => Search_Screen())
 
 
 
+}
+
+class BrowseCatalog extends StatelessWidget {
+  const BrowseCatalog({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: (){
+         Navigator.push(context, MaterialPageRoute(builder: (context) => NavScreen()));
+      },
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Container(
+            color: pink300,
+            child: H2text(text: 'BROWSE CATALOGS'),
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            
+            ),
+          ],
+        ),
+    );
+  }
 }
 
 

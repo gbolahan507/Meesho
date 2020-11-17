@@ -4,6 +4,7 @@ import 'package:meesho/export/organism_export.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/text/h3.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:meesho/widget/molecule/cart.dart';
 import 'package:meesho/widget/organism/Add_cart/add_cart_screen.dart';
 import 'package:meesho/widget/organism/account/childern_folder/notifications.dart';
 import 'package:meesho/widget/organism/account/edit_profile_page.dart';
@@ -54,7 +55,7 @@ class HomeAppbar extends StatelessWidget {
 
          InkWell(
            onTap: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context) => Add_cart_screen()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => Cart_screen()));
 
            },
                     child: Container(
