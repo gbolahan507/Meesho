@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:meesho/export/atom_export.dart';
-import 'package:meesho/model/catalog_details.dart';
 import 'package:meesho/model/catalog_model.dart';
 import 'package:meesho/util/colors.dart';
-import 'package:meesho/widget/atom/button_filled.dart';
 import 'package:meesho/widget/atom/text/h2.dart';
 import 'package:meesho/widget/molecule/copy_wish.dart';
-import 'package:meesho/widget/organism/account/catalog/imagebox.dart';
+import 'package:meesho/widget/molecule/productDisplay/product_image_box.dart';
 import 'package:meesho/widget/organism/account/catalog/out_of_stock_box.dart';
 import 'package:meesho/widget/organism/homepage/model/homepage_model.dart'; 
 

@@ -10,7 +10,6 @@ import 'package:meesho/widget/organism/account/edit_profile_screen.dart';
 import 'package:meesho/widget/organism/category/category_screen.dart';
 import 'package:meesho/widget/organism/orders/orders_screen.dart';
 import 'package:meesho/widget/organism/orders/order_button_container.dart';
-import 'package:meesho/widget/organism/text.dart';
 
 void main() => runApp(MyApp());
 

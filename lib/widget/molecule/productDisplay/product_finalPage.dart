@@ -4,7 +4,7 @@ import 'package:meesho/export/molecule_export.dart';
 import 'package:meesho/model/catalog_model.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/all_input/search_input.dart';
-import 'package:meesho/widget/organism/account/catalog/imagebox.dart';
+import 'package:meesho/widget/molecule/productDisplay/product_image_box.dart';
 import 'package:meesho/widget/organism/account/catalog/sizes_container.dart';
 import 'package:meesho/widget/organism/account/catalog/out_of_stock_box.dart';
 import 'package:meesho/widget/organism/account/catalog/safety_heading.dart';

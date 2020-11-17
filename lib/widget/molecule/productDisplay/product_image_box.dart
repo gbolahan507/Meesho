@@ -63,7 +63,6 @@ class ImageBox extends StatelessWidget {
                   shape: BoxShape.circle,
                   color: Colors.purple
                 ),
-                // child: Icon(Icons.close),
               ),
               SizedBox(width: 10,),
               H1text(text:'#100 OFF 1st Order Discount Applied', fontsize: 12.0, color: Colors.purple,),

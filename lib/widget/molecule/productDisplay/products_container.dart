@@ -3,7 +3,7 @@ import 'package:meesho/export/atom_export.dart';
 import 'package:meesho/model/catalog_details.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/button_filled.dart';
-import 'package:meesho/widget/molecule/products_landing_page.dart';
+import 'package:meesho/widget/molecule/productDisplay/products_landing_page.dart';
 import 'package:meesho/widget/organism/account/catalog/catalog_landing_page.dart';
 import 'package:meesho/widget/organism/homepage/model/homepage_model.dart';
 

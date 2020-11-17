@@ -3,14 +3,11 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:meesho/export/atom_export.dart';
 import 'package:meesho/export/molecule_export.dart';
-import 'package:meesho/model/catalog_details.dart';
 import 'package:meesho/util/colors.dart';
-import 'package:meesho/widget/atom/button_filled.dart';
 import 'package:meesho/widget/atom/text/h2.dart';
-import 'package:meesho/widget/organism/account/catalog/catalog_landing_page.dart';
+import 'package:meesho/widget/molecule/productDisplay/products_container.dart';
 import 'package:meesho/widget/organism/homepage/model/homepage_model.dart';
-import 'package:meesho/widget/molecule/products_container.dart';
-import 'package:meesho/widget/molecule/products_landing_page.dart';
+import 'package:meesho/widget/molecule/productDisplay/products_landing_page.dart';
 
 
 

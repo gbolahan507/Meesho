@@ -4,7 +4,7 @@ import 'package:meesho/export/atom_export.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/all_input/profile_input.dart';
 import 'package:meesho/widget/atom/button_filled.dart';
-import 'package:meesho/widget/molecule/decorated_dropdown.dart';
+import 'package:meesho/widget/molecule/productDisplay/decorated_dropdown.dart';
 import 'dart:io';
 
 

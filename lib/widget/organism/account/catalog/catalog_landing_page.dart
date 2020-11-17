@@ -5,9 +5,9 @@ import 'package:meesho/model/catalog_details.dart';
 import 'package:meesho/model/catalog_model.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/molecule/copy_wish.dart';
-import 'package:meesho/widget/molecule/product_finalPage.dart';
+import 'package:meesho/widget/molecule/productDisplay/product_finalPage.dart';
 
-import 'package:meesho/widget/molecule/product_landingPages_container.dart';
+import 'package:meesho/widget/molecule/productDisplay/product_landingPages_container.dart';
 import 'package:meesho/widget/organism/account/catalog/safety_heading.dart';
 
 

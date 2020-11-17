@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meesho/export/atom_export.dart';
 import 'package:meesho/util/colors.dart';
 import 'package:meesho/widget/atom/text/h3.dart';
-import 'package:meesho/widget/molecule/appbar_action_widget.dart';
+import 'package:meesho/widget/atom/appbar_action_widget.dart';
 import 'package:meesho/widget/organism/category/category_details.dart';
 import 'package:meesho/widget/organism/category/categorymodel.dart';
 import 'package:meesho/widget/organism/category/catalog_containers.dart';
